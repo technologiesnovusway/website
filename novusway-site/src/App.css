@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------- Base ----------- */
+body {
+  background-image: radial-gradient(circle at center, #9eccec, #188ff0);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: system-ui, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------- Layout Classes ----------- */
+.section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: transparent;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 1.5rem;
+  background: transparent;
+}
+
+/* ----------- Typography ----------- */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  max-width: 32rem;
+}
+
+.description {
+  max-width: 48rem;
+  margin: 0 auto 3rem auto;
+  font-size: 1.125rem;
+}
+
+/* ----------- Responsive Typography ----------- */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+  }
+  .description {
+    font-size: 1.25rem;
+  }
+}
+
+/* ----------- Buttons ----------- */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.button-group button {
+  font-size: 1.125rem;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: #1266B3;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-group button:hover {
+  background-color: #e5e7eb; /* gray-200 */
+}
+
+/* ----------- Grids ----------- */
+.grid {
+  max-width: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-3 {
+  max-width: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ----------- Cards ----------- */
+.card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  color: #1266B3;
+  border: 1px solid #bfdbfe;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ----------- Separator ----------- */
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 2rem 0;
+}
+
+/* ----------- Expert Sections ----------- */
+.expert-section {
+  max-width: 64rem;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.125rem;
+  color: white;
+}
+
+.expert-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+/* ----------- Footer & Links ----------- */
+a {
+  text-decoration: underline;
+  color: white;
+}
+
+footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #bfdbfe;
+}
+
+footer a {
+  margin: 0 1rem;
+}
+
+/* ----------- Lists ----------- */
+ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
