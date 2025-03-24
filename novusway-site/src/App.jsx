@@ -173,8 +173,8 @@ export default function HomePage() {
       </motion.section>
 
       <footer>
-        <a href="https://docs.google.com/document/d/1cyUWV7gbvWOqs2GHAwnHhu-XY3hIGLqXmD4-EKHGSEQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a>
-        <a href="https://docs.google.com/document/d/1XkcN3eyvqBsq8wIfQsoez2y5A7g9q-s_q6OgAPqfHqY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">CGU</a>
+        <a href="https://docs.google.com/document/d/1tVXTdhxWajaW1vU2WHWkXvm_3hhaGYRg7fjdYO6Yqqk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a>
+        <a href="https://docs.google.com/document/d/1DnehqAHhnLR5aQHzOPI7GgLV_b15RFYg171uYxVWBQM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">CGU</a>
         <br/>
         &copy; {new Date().getFullYear()} Technologies NovusWay Inc. Tous droits réservés.
       </footer>
